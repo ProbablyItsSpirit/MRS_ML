@@ -1,0 +1,47 @@
+.navbar-brand {
+    animation: colorChange 3s infinite;
+}
+
+@keyframes colorChange {
+    0% { color: red; }
+    33% { color: green; }
+    66% { color: blue; }
+    100% { color: red; }
+}
+
+.navbar-light {
+    background-color: #f8f9fa;
+}
+
+.nav-link {
+    border-radius: 15px; /* Curved border */
+    padding: 10px 20px; /* Padding for better appearance */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.nav-link:hover {
+    background-color: #007bff; /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
+}
+
+
+/* Glass-like effect */
+.navbar-glass {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.navbar-brand, .nav-link {
+    color: #fff !important;
+    max-height: 30px;
+}
+
+.nav-link:hover {
+    color: #ddd !important;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}

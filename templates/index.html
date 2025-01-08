@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Recommendation System</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/7bcc12f374.js" crossorigin="anonymous"></script>
+
+    <style>
+        .navbar-brand {
+            animation: colorChange 3s infinite;
+            display: flex;
+            align-items: center; /* Center items vertically */
+        }
+        
+        @keyframes colorChange {
+            0% { color: red; }
+            33% { color: green; }
+            66% { color: blue; }
+            100% { color: red; }
+        }
+        
+        .navbar-light {
+            background-color: #f8f9fa;
+        }
+        
+        .nav-link {
+            border-radius: 15px; /* Curved border */
+            padding: 10px 20px; /* Padding for better appearance */
+            transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect */
+            display: flex;
+            align-items: center; /* Center items vertically */
+        }
+        
+        .nav-link[href*="Sign Up"] {
+            color: blue; /* Initial text color for Sign Up */
+            background-color: transparent; /* Initial background color */
+        }
+        
+        .nav-link[href*="Sign Up"]:hover {
+            background-color: blue; /* Background color on hover */
+            color: white; /* Text color on hover */
+        }
+        
+        .nav-link[href*="Sign In"] {
+            color: lightcoral; /* Initial text color for Sign In */
+            background-color: transparent; /* Initial background color */
+        }
+        
+        .nav-link[href*="Sign In"]:hover {
+            background-color: lightcoral; /* Background color on hover */
+            color: white; /* Text color on hover */
+        }
+        
+        /* Glass-like effect for the navbar */
+        .navbar-glass {
+            background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+            backdrop-filter: blur(10px); /* Blur effect for glass-like appearance */
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Drop shadow for depth */
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* Subtle bottom border */
+        }
+    
+        /* Styling for the settings button */
+        .nav-link.settings {
+            border: none; /* Remove border */
+            color: lightgrey !important; /* Light grey text color */
+        }
+    
+        /* General nav-link hover effect */
+        .nav-link:hover {
+            color: #ddd !important; /* Light grey text color on hover */
+        }
+    
+        /* Align navbar items to the right */
+        .navbar-nav {
+            margin-left: auto;
+            display: flex;
+            align-items: center; /* Center items vertically */
+        }
+    </style>
+    
+</head>
+<body>
+    <n<nav class="navbar navbar-expand-lg navbar-light bg-light navbar-glass">
+        <a class="navbar-brand" href="#">
+            <img src="/static/logo.png" width="35" height="35" alt="Logo">
+            Music Recommendation System [MRS]
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item-settings">
+                    <i class="fa-solid fa-gear"></i>  <a class="nav-link" href="#">Settings</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sign Up</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sign In</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
